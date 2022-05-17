@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例10：break和continue</title>
+    <script>
+        // break：循环输出a的值，一旦大于10，使用break跳出循环。
+        var a=1;
+        while(a<15){
+            document.write("a的值："+a+"<br>");
+            a++;
+            if(a>10){
+                break;  //使用break跳出离自己最近的循环
+            }
+        }
+        // 输出100-120内不能同时被2和5整除的数。
+        var i,n=0;
+        for(i=100;i<=120;i++){
+            if(i%2==0&&i%5==0){
+                continue;  //如果能被2和5同时整除，跳出当前循环，继续下一个循环。即不打印该数。
+            }
+            document.write(i+"&nbsp;");
+            n++;
+            if(n%5==0){
+                document.write("<br>");   //5个一行。
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
