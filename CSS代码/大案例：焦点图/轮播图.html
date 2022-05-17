@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        
+        }
+        .promo {
+            /* 子绝父相 */
+            position: relative;
+            width: 976px;
+            height: 550px;
+            background-color: aquamarine;
+            margin: 100px auto;
+        }
+        /* 并集选择器可以集体声明相同的样式，有利于节约代码。 */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            /* 加了绝对定位的盒子可以直接设置高度和宽度 */
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0,0,0, .3);
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .prev {
+            left: 0;
+            /* 绝对定位的盒子垂直居中 */
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        .next {
+            right: 0;
+            /* 绝对定位的盒子垂直居中 */
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        .promo-nav {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 7px;
+        }
+        .promo-nav li {
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 3px;
+            float: left;
+        }
+        /* 不要忘记选择器权重的问题 */
+        .promo-nav .selected {
+            background-color: rgb(255, 114, 138);
+        }
+    </style>
+</head>
+<body>
+    <div class="promo">
+        <img src="MSI.jpg" alt="">
+        <!-- 左箭头 -->
+        <a href="#" class="prev"> &lt; </a>
+        <!-- 右箭头 -->
+        <a href="#" class="next"> &gt; </a>
+        <!-- 小圆点 -->
+        <ul class="promo-nav">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景图片</title>
+    <style>
+        div {
+            width: 600px;
+            height: 600px;
+            /* 插入图片 */
+            background-image: url(logo.png);
+            /* 不要平铺 */
+            background-repeat: no-repeat;
+            /* 沿着x轴方向平铺 */
+            /* background-repeat: repeat-x; */
+            /* 沿着y轴方向平铺 */
+            /* background-repeat: repeat-y; */
+            /* 沿着x轴和y轴方向平铺 */
+            /* background-repeat: repeat; */
+            /* 也可以插入背景颜色，只不过图片会压住颜色 */
+            background-color: #FFFFFF;
+            /* background-position：图片的方位 */
+            /* 20px 50px x轴在前，y轴在后 */
+            background-position: 20px 50px;
+        }
+        /* 简写 */
+        .background {
+            background: #FFFFFF,url(logo.png) no-repeat fixed center top;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div class="background"></div>
+</body>
+</html>

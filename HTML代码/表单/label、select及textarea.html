@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>label标签</title>
+    </head>
+    <body>
+        <!-- label标签 -->
+        <label for="text">用户名：</label> <input type="text" id="text"><br>
+        <input type="radio" id="male" name="sex"><label for="male">男</label>
+        <input type="radio" id="female" name="sex"><label for="female">女</label><br>
+        你来自哪里？
+        <form>
+            <select>
+                <option selected="selected">济南</option>
+                <option>青岛</option>
+                <option>烟台</option>
+                <option>潍坊</option>
+                <option>临沂</option>
+                <option>日照</option>
+            </select>
+        </form><br>
+        <form>
+            你对家乡有什么期待？
+            <!-- textarea打开界面时默认文本 -->
+            <!-- rows表示显示多少行，cols表示一行显示几个字符 -->
+            <!-- 但现阶段不用HTML来修改大小，在CSS中会重点使用 -->
+            <textarea rows="10" cols="50">我期待...</textarea>
+        </form>
+    </body>
+</html>

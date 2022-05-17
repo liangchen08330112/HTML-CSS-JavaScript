@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例9：元素的显示与隐藏</title>
+    <style>
+        .video {
+            /* 父相 */
+            position: relative;
+            width: 444px;
+            height: 320px;
+            margin: 30px auto;
+            background-color: rgb(202, 41, 41);
+        }
+        .video img {
+            width: 100%;
+            height: 100%;
+        }
+        /* 遮罩层 */
+        .mask {
+            /* 隐藏遮罩层 */
+            display: none;
+            /* 子绝 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0, .5) url(play.png) no-repeat center;
+        }
+        /* 鼠标经过盒子时显示里面遮罩层 */
+        .video:hover .mask{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="video">
+        <!-- 遮罩层 -->
+        <div class="mask">
+            <a href="https://www.bilibili.com/video/BV1oT4y1671T?spm_id_from=333.851.b_7265636f6d6d656e64.1"></a>
+        </div>
+        <!-- 视频封面图 -->
+        <img src="video.jpg" alt="" >
+    </div>
+</body>
+</html>

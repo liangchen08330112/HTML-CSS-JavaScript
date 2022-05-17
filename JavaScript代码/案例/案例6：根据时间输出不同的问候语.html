@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例6：根据时间输出不同的问候语</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var x="";   //初始化变量
+        var time = new Date().getHours();  //初始化time变量，并根据系统时间赋值
+        if(time>6&&time<9){  //6点到9点，早上好。
+            x="早上好！"
+        }else if(time>9&&time<11){  //9点到11点，上午好。
+            x="上午好！"
+        }else if(time>11&&time<13){  //11点到13点，早上好。
+            x="中午好！"
+        }else if(time>13&&time<18){  //13点到18点，早上好。
+            x="下午好！"
+        }else if(time>18&time<24){  //18点到24点，晚上好。
+            x="晚上好！"
+        }else if(time<6&&time>24){  //24点到次日6点，你还没睡啊。
+            x="你还没睡啊？"
+        }
+        document.write("当前时间为"+time+"时。");  //输出当前时间
+        document.write("<p>");  //换行
+            document.write(x);  //输出问候语
+    </script>
+</body>
+</html>

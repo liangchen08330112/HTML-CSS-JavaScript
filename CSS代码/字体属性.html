@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>字体属性</title>
+        <style>
+            /* 为h2设置字体为微软雅黑 */
+            h2 {
+                font-family: 'Microsoft Yahei';
+            }
+            /* 为段落标签设置宋体，字号20px */
+            p {
+                font-family: '宋体';
+                font-size: 20px;
+            }
+            /* 为div设置Tahoma，粗细为500 */
+            div {
+                font-family: Tahoma, "楷体";
+            }
+            /* 加粗 */
+            .bold {
+                font-weight: bold;
+            }
+            /* 为h3设置斜体 */
+            h3 {
+                font-style: italic;
+            }
+            /* 让斜体文字不倾斜 */
+            em {
+                font-style: normal;
+            }
+            /* 复合属性 */
+            h4 {
+                font-style: italic;
+                font-weight: 600;
+                font-size: 16px;
+                font-family: 'Microsoft Yahei';
+            }
+            h5 {
+                /* 简写时的顺序必须遵照：font-style, font-weight, font-size, font-family，否则不起作用 */
+                /* 不需要的属性可以省略（即取默认值），但font-size和font-family不能省略，否则不起效果 */
+                font: italic 700 20px '楷体';
+            }
+        </style>
+    </head>
+    <body>
+        <h2>字体属性</h2>
+        <p class="bold">正文，20220505</p>
+        <div>Hello World!</div>
+        <h3>斜体</h3>
+        <em>斜体变正常</em>
+        <h4>复合属性</h4>
+        <h5>复合代码简写</h5>
+    </body>
+</html>

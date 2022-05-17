@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var scope = "全局变量";  //声明一个全局变量
+        function checkscope(){
+            var scope = "局部变量";  //声明一个同名的局部变量
+            document.write(scope);  //使用的是局部变量而非全局变量
+        }
+        checkscope();  //调用checkscope()方法输出结果。
+    </script>
+    <script type="text/javascript">
+        var rate=0.05;
+        var money=5000;
+        var total=money*(1+rate)*(1+rate)*(1+rate)*(1+rate)*(1+rate);
+        document.write("贷款利率为："+rate+"<br>")
+        document.write("贷款金额为："+money+"元<br>")
+        document.write("贷款年限为：5年<br>")
+        document.write("还款总额为："+total+"元")
+    </script>
+</body>
+</html>

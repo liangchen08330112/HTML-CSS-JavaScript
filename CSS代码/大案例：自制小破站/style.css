@@ -1,0 +1,328 @@
+/* 确认版心 */
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+body {
+    background-color: #f3f5f7;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  }   
+.header {
+    height: 100px;
+    background-color: rgba(135, 207, 235, 0);
+    /* 此地方会层叠w的margin */
+    margin: 30px auto;
+}
+.logo {
+    float: left;
+    width: 94px;
+    height: 42px;
+    background-color: rgba(135, 207, 235, 0);
+}
+.nav2 {
+    float: left;
+    margin-left: 60px;
+}
+.nav2 ul li {
+    float: left;
+    margin: 0 10px;
+}
+.nav2 ul li a {
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;   
+}
+.nav2 ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+/* 搜索模块 */
+.search {
+    margin-left: 70px;
+    float: left;
+    width: 412px;
+    height: 42px;
+    color: rgb(0, 162, 255);
+}
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* 按钮button默认有个边框需要我们手动去掉 */
+    border: 0;
+    background: url(btn.png);
+}
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 10px;
+}
+.tougao {
+    float: right;
+    line-height: 42px;
+    margin-right: 20px;
+}
+/* banner区域 */
+.banner {
+    height: 421px;
+    background-color: rgb(252,151,153);
+}
+.banner .w {
+    height: 421px;
+    background: url(banner.jpg) no-repeat top center;
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(0,0,0, 0.3);
+}
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.subnav ul li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+.subnav ul li a span {
+    float: right;
+}
+.subnav ul li a:hover {
+    background-color: #00a4ff;
+    color: #ffffff;
+}
+.history {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+}
+.history h2 {
+    height: 48px;
+    background-color: #00a6ff;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+.bd {
+    padding: 0 20px;
+}
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* 快速导航 */
+.recommend {
+    height: 60px;
+    background-color: #fff;
+    margin-top: 30px;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0, 0.1);
+    line-height: 60px;
+}
+.recommend h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+.recommend ul {
+    float: left;
+    margin-left: 30px;
+}
+.recommend ul li {
+    float: left;
+}
+.recommend ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+}
+.change {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #00a4ff;
+}
+/* body模块部分 */
+.box {
+    margin-top: 30px;
+}
+.box-title_tuiguang {
+    height: 45px;
+}
+.box-title_tuiguang h2 {
+    float: left;
+    color: #000000;
+}
+.box-body-tuiguang ul {
+    width: 1225px;
+}
+.box-body-tuiguang ul li {
+    float: left;
+    width: 228px;
+    height: 260px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box-body-tuiguang ul li img {
+    width: 100%;
+}
+.box-body-tuiguang ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.box-body-tuiguang .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+.box-body-tuiguang .info span {
+    color: #00a4ff;
+}
+/* 推广部分结束，赛事部分开始 */
+.box {
+    margin-top: 30px;
+}
+.box-title_game {
+    height: 45px;
+}
+.box-title_game h2 {
+    float: left;
+    font-weight: normal;
+    color: #4e4e4e;
+}
+.box-body-game ul {
+    width: 1225px;
+}
+.box-body-game ul li {
+    float: left;
+    width: 228px;
+    height: 260px;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box-body-game ul li img {
+    width: 100%;
+}
+.box-body-game ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.box-body-game .info {
+    margin: 0 20px 0 25px;
+    font-size: 12px;
+    color: #999;
+}
+.box-body-game .info span {
+    color: #ff4000;
+}
+.footer {
+    height: 380px;
+    background-color: #00a4ff;
+}
+.footer .w {
+    padding: 35px;
+}
+.copyright {
+    float: left;
+}
+.copyright p {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    margin: 20px 0 15px 0;
+}
+.copyright p a {
+    color: #ffffff;
+}
+.links {
+    float: right;
+}
+.links dl {
+    float: left;
+    margin-left: 100px;
+}
+/* .links .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    line-height: 33px;
+    color: #ffffff;
+    font-size: 16px;
+} */
+.links dl dt {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.links dl dd {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.links dl dd a{
+    color: #fff;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例7：使用if嵌套</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var totalScore = 510;  //假设某考生高考成绩为510分
+        var talentScore = 90;  //假设某考生综合评价成绩为90分
+        document.write("该考生高考成绩为"+totalScore+"分<br>");
+        document.write("该考生综合评价成绩为"+talentScore+"分<br>");
+        if(totalScore>510){
+            if(talentScore>130){   //
+                document.write("该考生可报考中央美术学院等重点院校");
+            }else{
+                document.write("该考生可报考山东艺术学院等普通院校，但不可报考重点院校")
+            }
+        }else{
+            if(totalScore>400){
+                document.write("<p>")
+                document.write("该考生可报考山东艺术学院等普通院校")
+            }else{
+                document.write("<p>")
+                document.write("该考生只可报考高职或专科院校。")
+            }
+        }
+    </script>
+</body>
+</html>

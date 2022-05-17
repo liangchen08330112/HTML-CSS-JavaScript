@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>表单属性的区分</title>
+    </head>
+    <body>
+        <form action="liangchen.php" method="get">
+            <!-- 各种表单元素控件 -->
+            <!-- text文本框，用户可以输入文字 -->
+            用户名：<input type="text" name="username"><br>
+            <!-- password密码框，用户看不见自己输入的什么 -->
+            密&nbsp;&nbsp;码：<input type="password" name="password"><br>
+            <!-- 单选按钮和复选框可以设置checked属性，当页面打开时它们会默认被选中 -->
+            <!-- 单选按钮，可以实现多选 -->
+            性&nbsp;&nbsp;别：<input type="radio" name="sex" value="male" checked="checked">男&nbsp;&nbsp;
+            <input type="radio" name="sex" value="female">女<br>
+            <!-- 多选按钮，可以实现多选 -->
+            爱&nbsp;好：<input type="checkbox" name="hobby" value="eating">吃饭&nbsp;&nbsp;
+            <input type="checkbox" name="hobby" value="sleeping">睡觉&nbsp;&nbsp;
+            <input type="checkbox" name="hobby" value="studying" checked="checked">学习<br>
+            <!-- 提交按钮（按钮内文字自定，通过设定value值实现） -->
+            <input type="submit" value="我填完了">
+            <!-- 重置按钮 -->
+            <input type="reset" value="我想重写">
+        </form>
+    </body>
+</html>

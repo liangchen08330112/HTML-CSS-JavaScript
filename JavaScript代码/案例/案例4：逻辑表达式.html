@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=func, initial-scale=1.0">
+    <title>案例4：逻辑表达式</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function checkYear(){
+        var txtYearObj = document.all.txtYear;
+        var txtYear = txtYearObj.value;
+        if((txtYear==null)||(txtYear.length<1)||(txtYear<0)){
+            window.alert("请输入正确的年份！");
+            txtYearObj.focus();
+            return;
+        }
+        if(isNaN(txtYear)){
+            window.alert("输入的内容必须为整数型数字！");
+            txtYearObj.focus();
+            return;
+        }
+        if(isLeapYear(txtYear)){
+            window.alert(txtYear+"年是闰年");
+        }else {
+            window.alert(txtYear+"年不是闰年");
+        }
+        function isLeapYear(YearVal){
+            if((YearVal%100==0)&&(YearVal%400==0)){
+                return true;
+            }if(YearVal%4==0){
+                return true;
+            }
+            return false;
+        }
+    }
+    </script>
+    <form action="#" name="formYear">
+        请输入当前年份：
+        <input type="text" name="txtYear">
+        <p>判断该年份是否为闰年</p>
+        <input type="button" value="确定" onclick="checkYear()">
+    </form>
+</body>
+</html>

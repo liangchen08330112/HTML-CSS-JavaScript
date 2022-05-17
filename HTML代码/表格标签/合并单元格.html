@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="UTF-8">
+        <title>合并单元格</title>
+    </head>
+    <body>
+        <table width="500" height="200" border="1" cellspacing="0">
+            <!-- 合并单元格三步曲:
+            1.先确定跨行还是跨列，2.找到目标单元格，写上合并方式和合并数量，3.最后删除多余的单元格 -->
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
